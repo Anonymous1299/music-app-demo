@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Music App</h1>
+	</header>
+	<main>
+		<section class="playlist">
+			<h2>Playlist</h2>
+			<ul>
+				<li><a href="#" onclick="playSong('song1.mp3', 'Song 1', 'Artist 1', 'album1.png')">Song 1</a></li>
+				<li><a href="#" onclick="playSong('song2.mp3', 'Song 2', 'Artist 2', 'album2.png')">Song 2</a></li>
+				<li><a href="#" onclick="playSong('song3.mp3', 'Song 3', 'Artist 3', 'album3.png')">Song 3</a></li>
+				<li><a href="#" onclick="playSong('song4.mp3', 'Song 4', 'Artist 4', 'album4.png')">Song 4</a></li>
+				<li><a href="#" onclick="playSong('song5.mp3', 'Song 5', 'Artist 5', 'album5.png')">Song 5</a></li>
+			</ul>
+		</section>
+		<section class="player">
+			<h2>Now Playing</h2>
+			<div class="album-cover">
+				<img id="album-image" src="album1.png" alt="Album Cover">
+			</div>
+			<div class="song-info">
+				<h3 id="song-title">Song Title</h3>
+				<p id="artist-name">Artist Name</p>
+				<audio id="audio-player" controls>
+					<source id="audio-source" src="song1.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
+
